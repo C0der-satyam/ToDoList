@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+.container{
+    padding: 10px;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+}
+
+   
+
+.todo{
+    width: 100%;
+    max-width: 540px;
+    background: #e8e2e2;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 30px 30px 10px black;
+    
+}
+.todo h2{
+    color:black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-attachment: #9aaed7;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+   border-radius: 10px;
+    background: #dcc9c9;
+    padding: 10px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 11px 27px;
+    background: orange ;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 15px 8px 20px 50px;
+    height: 48px;
+    cursor: pointer;
+    position: relative;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(156 191 175 / 38%);;
+    margin: 13px;
+    border-radius: 20px;
+    box-shadow: 6px 9px 16px 10px;
+    
+}
+ul
+li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 27px;
+    border-radius: 50px;
+    background-image: url("images\ \(1\).png");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul
+li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul
+li.checked::before{
+   background-image: url("images\ \(2\).png");
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 40px;
+    color:gray;
+    border-radius: 50%;
+}
+ul
+li span:hover{
+    background: #edeef0;
+}
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+@media screen and (min-width: 601px) {
+    body {
+        background-color: lightgreen;
+    }
+}
